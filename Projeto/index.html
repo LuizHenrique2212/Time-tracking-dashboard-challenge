@@ -4,15 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
-  
+  <script src="/script.js" defer></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main class="project">
@@ -24,100 +17,100 @@
         </div>
         <nav class="timeline"> 
         <ul>
-          <li>Daily</li>
-          <li>Weekly</li>
-          <li>Monthly</li>
+          <li class="daily">Daily</li>
+          <li class="weekly">Weekly</li>
+          <li class="monthly">Monthly</li>
         </ul>
       </nav>
     </aside>
     <section class="dashboard">
-      <div class="work">
+      <div class="work" id="title">
         <img class="svg" src="/images/icon-work.svg" alt="work_image">
         <div class="content"> 
           <header>                   
             <p class="categoryTitle">Work</p>
-            <img src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
+            <img onclick="nthHere()" class="options" src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
           </header>
           <main>
-            <p class="hours">xxx</p>
+            <p class="contentWork"></p>
           </main>
           <footer>
-            <p class="previous">yyy</p>
+            <p class="previousWork"></p>
           </footer>
         </div>
       </div>
-      <div class="play">
+      <div class="play" id="title">
         <img class="svg" src="/images/icon-play.svg" alt="controller_image">
           <div class="content">
             <header>                   
               <p class="categoryTitle">Play</p>
-              <img src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
+              <img onclick="nthHere()" class="options" src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
             </header>
             <main>
-              <p class="content">xxx</p>
+              <p class="contentPlay"></p>
             </main>
             <footer>
-              <p class="previous">yyy</p>
+              <p class="previousPlay"></p>
             </footer>
         </div>
       </div>
-      <div class="study">
+      <div class="study" id="title">
         <img class="svg" src="/images/icon-study.svg" alt="book_image">
         <div class="content">
           <header>                   
             <p class="categoryTitle">Study</p>
-            <img src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
+            <img onclick="nthHere()" class="options" src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
           </header>
           <main>
-            <p class="content">xxx</p>
+            <p class="contentStudy"></p>
           </main>
           <footer>
-            <p class="previous">yyy</p>
+            <p class="previousStudy"></p>
           </footer>
       </div>
       </div>
-      <div class="exercise">
+      <div class="exercise" id="title">
         <img class="svg" src="/images/icon-exercise.svg" alt="athlet_image">
         <div class="content">
           <header>                   
             <p class="categoryTitle">Exercise</p>
-            <img src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
+            <img onclick="nthHere()" class="options" src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
           </header>
           <main>
-            <p class="content">xxx</p>
+            <p class="contentExercise"></p>
           </main>
           <footer>
-            <p class="previous">yyy</p>
+            <p class="previousExercise"></p>
           </footer>
       </div>
       </div>
-      <div class="social">
+      <div class="social" id="title">
         <img class="svg" src="/images/icon-social.svg" alt="chat_balloon_image">
         <div class="content">
           <header>                   
             <p class="categoryTitle">Social</p>
-            <img src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
+            <img onclick="nthHere()" class="options" src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
           </header>
           <main>
-            <p class="content">xxx</p>
+            <p class="contentSocial"></p>
           </main>
           <footer>
-            <p class="previous">yyy</p>
+            <p class="previousSocial"></p>
           </footer>
       </div>
       </div>
-      <div class="selfcare">
+      <div class="selfcare" id="title">
         <img class="svg" src="/images/icon-self-care.svg" alt="heart_image">
         <div class="content">
           <header>                   
             <p class="categoryTitle">Self Care</p>
-            <img src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
+            <img onclick="nthHere()" class="options" src="/images/icon-ellipsis.svg" width="18px" height="5px" alt="options">
           </header>
           <main>
-            <p class="content">xxx</p>
+            <p class="contentSelfCare"></p>
           </main>
           <footer>
-            <p class="previous">yyy</p>
+            <p class="previousSelfCare"></p>
           </footer>
       </div>
       </div>
@@ -126,7 +119,7 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Luiz Henrique</a>
+      Coded by <a href="https://github.com/LuizHenrique2212" target="_blank">Luiz Henrique</a>
     </div>
   </footer>
 </body>
